@@ -1,8 +1,0 @@
-- name: install public keys
-  authorized_key:
-    user: root
-    state: present
-    key: '{{ item }}'
-  with_file:
-    - public_keys/zaza.pub
-    - public_keys/abdou.pub
